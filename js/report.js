@@ -5,12 +5,13 @@ const ui = {
   patientMeta: document.getElementById("patient-meta"),
   reportMeta: document.getElementById("report-meta"),
   lungRads: document.getElementById("lung-rads"),
-  doseInfo: document.getElementById("dose-info"),
+  noduleCount: document.getElementById("nodule-count"),
+  cacMeta: document.getElementById("cac-meta"),
+  cacRisk: document.getElementById("cac-risk"),
   nodules: document.getElementById("nodules"),
   otherFindings: document.getElementById("other-findings"),
   reportText: document.getElementById("report-text"),
   reportTextSection: document.getElementById("report-text-section"),
-  pdfLink: document.getElementById("pdf-link"),
   fhirConnection: document.getElementById("fhir-connection"),
   fhirConnectionLabel: document.getElementById("fhir-connection-label"),
   authWarning: document.getElementById("auth-warning"),
@@ -122,6 +123,8 @@ const parseSummaryObservation = (observations) => {
     ctdi: "",
     dlp: "",
     lungRads: "",
+    noduleCount: observations[1]?.valueCodeableConcept?.text || "",
+    cacRisk: observations[2]?.valueCodeableConcept?.text || "",
     modifierS: "",
     recommendation: "",
   };
@@ -156,14 +159,14 @@ const NODULE_SUMMARY_FIELDS = [
 ];
 
 const NODULE_DETAIL_GROUPS = [
-  {
-    title: "原始影像座標",
-    fields: [
-      { key: "originalSpacingX", label: "X", patterns: ["original spacing x"] },
-      { key: "originalSpacingY", label: "Y", patterns: ["original spacing y"] },
-      { key: "originalSpacingZ", label: "Z", patterns: ["original spacing z"] },
-    ],
-  },
+  // {
+  //   title: "原始影像座標",
+  //   fields: [
+  //     { key: "originalSpacingX", label: "X", patterns: ["original spacing x"] },
+  //     { key: "originalSpacingY", label: "Y", patterns: ["original spacing y"] },
+  //     { key: "originalSpacingZ", label: "Z", patterns: ["original spacing z"] },
+  //   ],
+  // },
   // {
   //   title: "General",
   //   fields: [
@@ -178,9 +181,9 @@ const NODULE_DETAIL_GROUPS = [
     title: "橫切面 (Axial)",
     fields: [
       { key: "axialMaxRadius", label: "平均直徑", patterns: ["axial max radius"] },
-      { key: "axialMaxDiameter", label: "最長徑", patterns: ["axial max diameter"] },
-      { key: "axialPerpDiameter", label: "垂直徑", patterns: ["axial perp diameter"] },
-      { key: "axialRadius", label: "半徑", patterns: ["axial radius"] },
+      // { key: "axialMaxDiameter", label: "最長徑", patterns: ["axial max diameter"] },
+      // { key: "axialPerpDiameter", label: "垂直徑", patterns: ["axial perp diameter"] },
+      // { key: "axialRadius", label: "半徑", patterns: ["axial radius"] },
       { key: "axialSlice", label: "所在張數", patterns: ["axial slice"] },
     ],
   },
@@ -188,9 +191,9 @@ const NODULE_DETAIL_GROUPS = [
     title: "冠狀切面 (Coronal)",
     fields: [
       { key: "coronalMaxRadius", label: "平均直徑", patterns: ["coronal max radius"] },
-      { key: "coronalMaxDiameter", label: "最長徑", patterns: ["coronal max diameter"] },
-      { key: "coronalPerpDiameter", label: "垂直徑", patterns: ["coronal perp diameter"] },
-      { key: "coronalRadius", label: "半徑", patterns: ["coronal radius"] },
+      // { key: "coronalMaxDiameter", label: "最長徑", patterns: ["coronal max diameter"] },
+      // { key: "coronalPerpDiameter", label: "垂直徑", patterns: ["coronal perp diameter"] },
+      // { key: "coronalRadius", label: "半徑", patterns: ["coronal radius"] },
       { key: "coronalSlice", label: "所在張數", patterns: ["coronal slice"] },
     ],
   },
@@ -355,8 +358,20 @@ const renderReportData = ({ patient, report, observations }) => {
   ].join(" • ");
 
   const summary = parseSummaryObservation(observations);
+  // Left card
   ui.lungRads.textContent = summary.lungRads || "Unknown";
-  renderDoseInfo(summary);
+
+  const count = parseInt(summary.noduleCount, 10) || 0;
+  ui.noduleCount.textContent = count > 0
+    ? `${count} Nodule${count > 1 ? "s" : ""}`
+    : "No nodules";
+
+  // Right card
+  ui.cacMeta.textContent = summary.modifierS
+    ? `Modifier S: ${summary.modifierS}`
+    : "";
+
+  ui.cacRisk.textContent = summary.cacRisk || "Not assessed";
 
   const nodules = observations
     .map((obs) => parseNoduleObservation(obs))
@@ -382,18 +397,6 @@ const renderReportData = ({ patient, report, observations }) => {
     ui.reportTextSection.style.display = "block";
   } else if (ui.reportTextSection) {
     ui.reportTextSection.style.display = "none";
-  }
-
-  if (
-    Array.isArray(report.presentedForm) &&
-    report.presentedForm[0] &&
-    report.presentedForm[0].url
-  ) {
-    ui.pdfLink.href = report.presentedForm[0].url;
-    ui.pdfLink.textContent = "Open original PDF";
-  } else {
-    ui.pdfLink.textContent = "No PDF attached.";
-    ui.pdfLink.removeAttribute("href");
   }
 
   ui.status.textContent = "";

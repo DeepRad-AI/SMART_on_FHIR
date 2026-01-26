@@ -66,6 +66,9 @@ a {
   box-shadow: 0 12px 30px var(--shadow);
 }
 
+.card-header {
+}
+
 .patient-card {
   display: flex;
   flex-direction: column;
@@ -132,6 +135,7 @@ a {
 }
 
 .section-title {
+  font-weight: bold;
   font-size: 18px;
   margin-bottom: 12px;
 }
@@ -142,10 +146,15 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-.lung-rads {
+.highlight-value {
   font-size: 40px;
   font-weight: 700;
   color: var(--accent);
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dose-row,
