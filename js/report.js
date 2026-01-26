@@ -177,20 +177,20 @@ const NODULE_DETAIL_GROUPS = [
   {
     title: "橫切面 (Axial)",
     fields: [
-      { key: "axialMaxDiameter", label: "最長徑", patterns: ["axial max diameter"] },
-      { key: "axialRadius", label: "半徑", patterns: ["axial radius"] },
       { key: "axialMaxRadius", label: "平均直徑", patterns: ["axial max radius"] },
-      { key: "axialPerpDiameter", label: "重直徑", patterns: ["axial perp diameter"] },
+      { key: "axialMaxDiameter", label: "最長徑", patterns: ["axial max diameter"] },
+      { key: "axialPerpDiameter", label: "垂直徑", patterns: ["axial perp diameter"] },
+      { key: "axialRadius", label: "半徑", patterns: ["axial radius"] },
       { key: "axialSlice", label: "所在張數", patterns: ["axial slice"] },
     ],
   },
   {
     title: "冠狀切面 (Coronal)",
     fields: [
-      { key: "coronalMaxDiameter", label: "最長徑", patterns: ["coronal max diameter"] },
-      { key: "coronalRadius", label: "半徑", patterns: ["coronal radius"] },
       { key: "coronalMaxRadius", label: "平均直徑", patterns: ["coronal max radius"] },
-      { key: "coronalPerpDiameter", label: "重直徑", patterns: ["coronal perp diameter"] },
+      { key: "coronalMaxDiameter", label: "最長徑", patterns: ["coronal max diameter"] },
+      { key: "coronalPerpDiameter", label: "垂直徑", patterns: ["coronal perp diameter"] },
+      { key: "coronalRadius", label: "半徑", patterns: ["coronal radius"] },
       { key: "coronalSlice", label: "所在張數", patterns: ["coronal slice"] },
     ],
   },
@@ -206,9 +206,9 @@ const NODULE_DETAIL_GROUPS = [
       { key: "followUpInfo", label: "追蹤訊息", patterns: ["follow up info"] },
       { key: "volumeChange", label: "體積變化", patterns: ["volume change"] },
       { key: "volumeDoublingTime", label: "體積倍增時間", patterns: ["volume doubling time"] },
-      { key: "description", label: "追蹤", patterns: ["description"] },
+      { key: "description", label: "追蹤描述", patterns: ["description"] },
       { key: "lungRads", label: "Lung-RADS", patterns: ["lungrads"] },
-      { key: "cacScore", label: "心臟鈣化分數", patterns: ["cac score"] },
+      // { key: "cacScore", label: "心臟鈣化分數", patterns: ["cac score"] },
     ],
   },
 ];
@@ -263,13 +263,13 @@ const renderNoduleCard = (nodule, index) => {
 
   const list = document.createElement("div");
   list.className = "nodule-list";
-  lines.forEach(([label, value]) => {
-    if (!value) return;
-    const row = document.createElement("div");
-    row.className = "nodule-row";
-    row.textContent = `${label}: ${value}`;
-    list.appendChild(row);
-  });
+  // lines.forEach(([label, value]) => {
+  //   if (!value) return;
+  //   const row = document.createElement("div");
+  //   row.className = "nodule-row";
+  //   row.textContent = `${label}: ${value}`;
+  //   list.appendChild(row);
+  // });
 
   card.append(title, list);
 

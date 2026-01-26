@@ -59,7 +59,7 @@
         "conclusion": "See Observations for structured Lung-RADS and nodule details.",
         "text": {
           "status": "generated",
-          "div": "<div><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><tr><th>Field</th><th>Value</th></tr><tr><td>original_spacing_x</td><td>122.5 px</td></tr><tr><td>original_spacing_y</td><td>84.2 px</td></tr><tr><td>original_spacing_z</td><td>32.0 px</td></tr><tr><td>axial max_diameter</td><td>7.2 mm</td></tr><tr><td>axial radius</td><td>3.6 mm</td></tr><tr><td>axial max_radius</td><td>4.0 mm</td></tr><tr><td>axial perp_diameter</td><td>6.8 mm</td></tr><tr><td>axial slice</td><td>157</td></tr><tr><td>coronal max_diameter</td><td>7.0 mm</td></tr><tr><td>coronal radius</td><td>3.5 mm</td></tr><tr><td>coronal max_radius</td><td>3.9 mm</td></tr><tr><td>coronal perp_diameter</td><td>6.5 mm</td></tr><tr><td>coronal slice</td><td>148</td></tr><tr><td>solid_part</td><td>3.1 mm</td></tr><tr><td>texture</td><td>part-solid</td></tr><tr><td>volume</td><td>210 mm3</td></tr><tr><td>location</td><td>RUL</td></tr><tr><td>malignancy</td><td>2/5</td></tr><tr><td>margin</td><td>spiculated</td></tr><tr><td>follow_up_info</td><td>Stable compared to 2024-06-10</td></tr><tr><td>volume_change</td><td>5 mm3</td></tr><tr><td>volume_doubling_time</td><td>420 days</td></tr><tr><td>description</td><td>stable</td></tr><tr><td>lungRADS</td><td>2</td></tr><tr><td>cac_score</td><td>0 Agatston</td></tr></table></div>"
+          "div": "<div><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><tr><th>Field</th><th>Value</th></tr><tr><td>X</td><td>122.5</td></tr><tr><td>Y</td><td>84.2</td></tr><tr><td>Z</td><td>32.0</td></tr><tr><td>橫切面 (Axial) 平均直徑</td><td>7.2 mm</td></tr><tr><td>橫切面 (Axial) 最長徑</td><td>3.6 mm</td></tr><tr><td>橫切面 (Axial) 垂直徑</td><td>4.0 mm</td></tr><tr><td>橫切面 (Axial) 半徑</td><td>6.8 mm</td></tr><tr><td>橫切面 (Axial) 所在張數</td><td>157</td></tr><tr><td>冠狀切面 (Coronal) 平均直徑</td><td>7.0 mm</td></tr><tr><td>冠狀切面 (Coronal) 最長徑</td><td>3.5 mm</td></tr><tr><td>冠狀切面 (Coronal) 垂直徑</td><td>3.9 mm</td></tr><tr><td>冠狀切面 (Coronal) 半徑</td><td>6.5 mm</td></tr><tr><td>冠狀切面 (Coronal) 所在張數</td><td>148</td></tr><tr><td>實質部分</td><td>3.1 mm</td></tr><tr><td>類型</td><td>part-solid</td></tr><tr><td>體積</td><td>210 mm3</td></tr><tr><td>肺葉</td><td>RUL</td></tr><tr><td>組織邊緣</td><td>spiculated</td></tr><tr><td>追蹤訊息</td><td>Stable compared to 2024-06-10</td></tr><tr><td>體積變化</td><td>5 mm3</td></tr><tr><td>體積倍增時間</td><td>420 days</td></tr><tr><td>追蹤描述</td><td>stable</td></tr><tr><td>Lung-RADS</td><td>2</td></tr></table></div>"
         },
         "result": [
           {
@@ -248,7 +248,7 @@
             },
             "valueQuantity": {
               "value": 122.5,
-              "unit": "px"
+              "unit": ""
             }
           },
           {
@@ -257,7 +257,7 @@
             },
             "valueQuantity": {
               "value": 84.2,
-              "unit": "px"
+              "unit": ""
             }
           },
           {
@@ -266,7 +266,7 @@
             },
             "valueQuantity": {
               "value": 32.0,
-              "unit": "px"
+              "unit": ""
             }
           },
           {
@@ -274,7 +274,7 @@
               "text": "axial max_diameter"
             },
             "valueQuantity": {
-              "value": 7.2,
+              "value": 8.0,
               "unit": "mm"
             }
           },
@@ -437,7 +437,7 @@
             },
             "valueQuantity": {
               "value": 0,
-              "unit": "Agatston"
+              "unit": ""
             }
           }
         ]
