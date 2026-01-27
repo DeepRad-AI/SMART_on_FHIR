@@ -25,10 +25,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:diagnosticreport-dr695390",
+      "fullUrl": "urn:uuid:diagnosticreport-new-p695390",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "dr-695390",
+        "id": "new-p695390",
         "status": "final",
         "category": [
           {
@@ -54,50 +54,50 @@
         "subject": {
           "reference": "Patient/p-695390"
         },
-        "effectiveDateTime": "2024-05-13T10:30:00+08:00",
-        "issued": "2024-05-14T12:00:00+08:00",
+        "effectiveDateTime": "2025-03-23T10:30:00+08:00",
+        "issued": "2025-03-24T12:00:00+08:00",
         "conclusion": "See Observations for structured Lung-RADS and nodule details.",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">LDCT Quality: ■Good □Acceptable □Not Acceptable<br/><br/>CTDIvol:______mGy Total DLP:______mGy*cm<br/><br/>In comparison with the prior CT, Date __(Y)/__(M)/__(D)<br/>■No prior chest CT available<br/><br/>Lung nodule findings related to cancer screening<br/>詳細規範請參閱 Lung-RADS v2022<br/>□No lung nodule<br/>□Nodule with benign features.<br/>■Lung nodule(s)(&lt;6mm)(選填 SE:_606_, IM:__119__)<br/>    Nodule 1 (&lt;6mm), Size: 4.8mm, Lobe: LUL (SE:606, IM:119)<br/><br/>■Juxtapleural nodule.<br/>□Lung nodule(s) (≧6mm or enlarging (&gt;1.5mm) or new (≧4mm)): total number □1, □2, □3, □≧4, and described as followings:<br/>(Describe the most suspicious 3 nodules in order)<br/><br/>□Airway nodule<br/>    □Subsegmental (Category 2)<br/>    □Segmental or more proximal<br/>        □Favors secretions (Category 2)<br/>        □At baseline (Category 4A)<br/>        □Stable or growing (Category 4B)<br/><br/>□Atypical Pulmonary Cysts<br/>    □Category 3. Lobe: (SE:__, IM:__) □RUL □RML □RLL □LUL □LLL<br/>    □Category 4A. Lobe: (SE:__, IM:__) □RUL □RML □RLL □LUL □LLL<br/>    □Category 4B. Lobe: (SE:__, IM:__) □RUL □RML □RLL □LUL □LLL<br/><br/>□The pattern of lung nodules has a higher probability of metastases<br/><br/>Other Lung Findings(選填)<br/>□Emphysema<br/>□Bronchiectasis<br/>□Bronchitis/bronchiolitis<br/>□Tree-in-bud pattern<br/>□Centrilobular nodules<br/>□Old Pulmonary TB<br/>□Interstitial lung disease(ILD)<br/>□Other ______<br/><br/>Other Findings(選填)<br/>■Coronary artery calcification (CAC Score Risk: _Moderate_)<br/>□Enlarged lymph nodes, location ______<br/>□Other significant abnormal chest findings ______<br/>□Other significant abnormal abdominal or neck findings in this chest CT scan ______<br/><br/>Overall recommendation<br/>Lung-RADS v2022 Category Descriptor<br/>□Category 0: Incomplete.<br/>    □Prior chest CT examination being located for comparison.<br/>    □Part or all of lungs cannot be evaluated.<br/>    □Findings suggestive of an inflammatory or infectious process.<br/>□Category 1: Negative.<br/>■Category 2: Benign – Based on imaging features or indolent behavior.<br/>□Category 3: Probably Benign – Based on imaging features or behavior.<br/>□Category 4A: Suspicious.<br/>□Category 4B: Very suspicious.<br/>□Category 4X: Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer.<br/>(選填)<br/>□Modifier S: May add to category 0-4 for clinically significant or potentially clinically significant findings unrelated to lung cancer.<br/>□Please visit the outpatient clinic for a consultation.</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">LDCT Quality: ■Good □Acceptable □Not Acceptable<br/><br/>CTDIvol:______mGy Total DLP:______mGy*cm<br/><br/>In comparison with the prior CT, Date _2024_(Y)/_05_(M)/_13_(D)<br/>□No prior chest CT available<br/><br/>Lung nodule findings related to cancer screening<br/>詳細規範請參閱 Lung-RADS v2022<br/>□No lung nodule<br/>□Nodule with benign features.<br/>□Lung nodule(s)(&lt;6mm)(選填 SE:______, IM:______)<br/><br/>■Juxtapleural nodule.<br/>■Lung nodule(s) (≧6mm or enlarging (&gt;1.5mm) or new (≧4mm)): total number ■1, □2, □3, □≧4, and described as followings:<br/>(Describe the most suspicious 3 nodules in order)<br/><br/>    ■Lung nodule 1 (size, character and location)<br/>        Entire Nodule: 4.8 mm<br/>        Density: □non-solid □part-solid (solid part: ______ mm) ■solid<br/>        Lobe: (SE:606, IM:124) □RUL □RML □RLL ■LUL □LLL<br/>        The nodule is □unchanged ■enlarging (&gt;1.5mm) □newly found (≧4mm) in follow-up □No prior chest CT comparison<br/><br/>□Airway nodule<br/>    □Subsegmental (Category 2)<br/>    □Segmental or more proximal<br/>        □Favors secretions (Category 2)<br/>        □At baseline (Category 4A)<br/>        □Stable or growing (Category 4B)<br/><br/>□Atypical Pulmonary Cysts<br/>    □Category 3. Lobe: (SE:__, IM:__) □RUL □RML □RLL □LUL □LLL<br/>    □Category 4A. Lobe: (SE:__, IM:__) □RUL □RML □RLL □LUL □LLL<br/>    □Category 4B. Lobe: (SE:__, IM:__) □RUL □RML □RLL □LUL □LLL<br/><br/>□The pattern of lung nodules has a higher probability of metastases<br/><br/>Other Lung Findings(選填)<br/>□Emphysema<br/>□Bronchiectasis<br/>□Bronchitis/bronchiolitis<br/>□Tree-in-bud pattern<br/>□Centrilobular nodules<br/>□Old Pulmonary TB<br/>□Interstitial lung disease(ILD)<br/>□Other ______<br/><br/>Other Findings(選填)<br/>■Coronary artery calcification (CAC Score Risk: _Moderate_)<br/>□Enlarged lymph nodes, location ______<br/>□Other significant abnormal chest findings ______<br/>□Other significant abnormal abdominal or neck findings in this chest CT scan ______<br/><br/>Overall recommendation<br/>Lung-RADS v2022 Category Descriptor<br/>□Category 0: Incomplete.<br/>    □Prior chest CT examination being located for comparison.<br/>    □Part or all of lungs cannot be evaluated.<br/>    □Findings suggestive of an inflammatory or infectious process.<br/>□Category 1: Negative.<br/>□Category 2: Benign – Based on imaging features or indolent behavior.<br/>□Category 3: Probably Benign – Based on imaging features or behavior.<br/>■Category 4A: Suspicious.<br/>□Category 4B: Very suspicious.<br/>□Category 4X: Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer.<br/>(選填)<br/>□Modifier S: May add to category 0-4 for clinically significant or potentially clinically significant findings unrelated to lung cancer.<br/>□Please visit the outpatient clinic for a consultation.</div>"
         },
         "result": [
           {
-            "reference": "Observation/o-695392"
+            "reference": "Observation/o-695400"
           },
           {
-            "reference": "Observation/o-695393"
+            "reference": "Observation/o-695401"
           },
           {
-            "reference": "Observation/o-695394"
+            "reference": "Observation/o-695402"
           },
           {
-            "reference": "Observation/o-695395"
+            "reference": "Observation/o-695403"
           },
           {
-            "reference": "Observation/o-695396"
+            "reference": "Observation/o-695404"
           },
           {
-            "reference": "Observation/o-695397"
+            "reference": "Observation/o-695405"
           },
           {
-            "reference": "Observation/o-695398"
+            "reference": "Observation/o-695406"
           },
           {
-            "reference": "Observation/o-695399"
+            "reference": "Observation/o-695407"
           }
         ]
       },
       "request": {
         "method": "PUT",
-        "url": "DiagnosticReport/dr-695390"
+        "url": "DiagnosticReport/new-p695390"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-lung-rads-o695392",
+      "fullUrl": "urn:uuid:obs-lung-rads-o695400",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-695392",
+        "id": "o-695400",
         "status": "final",
         "category": [
           {
@@ -128,22 +128,22 @@
             {
               "system": "http://radlex.org",
               "code": "RID50137",
-              "display": "Lung-RADS 2"
+              "display": "Lung-RADS 4A"
             }
           ],
-          "text": "2"
+          "text": "4A"
         }
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695392"
+        "url": "Observation/o-695400"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-lung-rads-o695393",
+      "fullUrl": "urn:uuid:obs-lung-rads-o695401",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-695393",
+        "id": "o-695401",
         "status": "final",
         "category": [
           {
@@ -182,14 +182,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695393"
+        "url": "Observation/o-695401"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-lung-rads-o695394",
+      "fullUrl": "urn:uuid:obs-lung-rads-o695402",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-695394",
+        "id": "o-695402",
         "status": "final",
         "category": [
           {
@@ -228,14 +228,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695394"
+        "url": "Observation/o-695402"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-nodule-presence-o695395",
+      "fullUrl": "urn:uuid:obs-nodule-presence-o695403",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-695395",
+        "id": "o-695403",
         "status": "final",
         "category": [
           {
@@ -266,14 +266,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695395"
+        "url": "Observation/o-695403"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-nodule-1-o695396",
+      "fullUrl": "urn:uuid:obs-nodule-1-o695404",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-695396",
+        "id": "o-695404",
         "status": "final",
         "category": [
           {
@@ -306,7 +306,7 @@
               "text": "max_diameter"
             },
             "valueQuantity": {
-              "value": 5,
+              "value": 5.7,
               "unit": "mm"
             }
           },
@@ -324,7 +324,7 @@
               "text": "max_radius"
             },
             "valueQuantity": {
-              "value": 4.6,
+              "value": 5.1,
               "unit": "mm"
             }
           },
@@ -341,7 +341,7 @@
             "code": {
               "text": "slice"
             },
-            "valueInteger": 243
+            "valueInteger": 239
           },
           {
             "code": {
@@ -393,7 +393,7 @@
               "text": "axial max_radius"
             },
             "valueQuantity": {
-              "value": 4.6,
+              "value": 5.1,
               "unit": "mm"
             }
           },
@@ -410,7 +410,7 @@
             "code": {
               "text": "axial slice"
             },
-            "valueInteger": 71
+            "valueInteger": 76
           },
           {
             "code": {
@@ -435,7 +435,7 @@
               "text": "coronal max_radius"
             },
             "valueQuantity": {
-              "value": 4.4,
+              "value": 4.9,
               "unit": "mm"
             }
           },
@@ -452,7 +452,7 @@
             "code": {
               "text": "coronal slice"
             },
-            "valueInteger": 303
+            "valueInteger": 311
           },
           {
             "code": {
@@ -471,7 +471,7 @@
               "text": "volume"
             },
             "valueQuantity": {
-              "value": 52.61,
+              "value": 59.28,
               "unit": "mm3"
             }
           },
@@ -497,7 +497,7 @@
             "code": {
               "text": "follow_up_info"
             },
-            "valueString": "No Previous Examination"
+            "valueString": "13/05/2024"
           },
           {
             "code": {
@@ -509,13 +509,13 @@
             "code": {
               "text": "volume_doubling_time"
             },
-            "valueString": "--"
+            "valueString": "783 Days"
           },
           {
             "code": {
               "text": "description"
             },
-            "valueString": "No Previous Examination"
+            "valueString": "Unchanged"
           },
           {
             "code": {
@@ -536,14 +536,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695396"
+        "url": "Observation/o-695404"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-nodule-2-o695397",
+      "fullUrl": "urn:uuid:obs-nodule-2-o695405",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-o695397",
+        "id": "o-o695405",
         "status": "final",
         "category": [
           {
@@ -663,7 +663,7 @@
               "text": "axial max_radius"
             },
             "valueQuantity": {
-              "value": 4.8,
+              "value": 6.1,
               "unit": "mm"
             }
           },
@@ -680,7 +680,7 @@
             "code": {
               "text": "axial slice"
             },
-            "valueInteger": 119
+            "valueInteger": 124
           },
           {
             "code": {
@@ -705,7 +705,7 @@
               "text": "coronal max_radius"
             },
             "valueQuantity": {
-              "value": 5.2,
+              "value": 5.9,
               "unit": "mm"
             }
           },
@@ -722,7 +722,7 @@
             "code": {
               "text": "coronal slice"
             },
-            "valueInteger": 190
+            "valueInteger": 204
           },
           {
             "code": {
@@ -741,7 +741,7 @@
               "text": "volume"
             },
             "valueQuantity": {
-              "value": 85.55,
+              "value": 134.65,
               "unit": "mm3"
             }
           },
@@ -767,7 +767,7 @@
             "code": {
               "text": "follow_up_info"
             },
-            "valueString": "No Previous Examination"
+            "valueString": "13/05/2024"
           },
           {
             "code": {
@@ -779,19 +779,19 @@
             "code": {
               "text": "volume_doubling_time"
             },
-            "valueString": "--"
+            "valueString": "473 Days"
           },
           {
             "code": {
               "text": "description"
             },
-            "valueString": "No Previous Examination"
+            "valueString": "Growing (>1.5mm)"
           },
           {
             "code": {
               "text": "lungRADS"
             },
-            "valueString": "2"
+            "valueString": "4A"
           },
           {
             "code": {
@@ -806,14 +806,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695397"
+        "url": "Observation/o-695405"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-ctdivol-o695398",
+      "fullUrl": "urn:uuid:obs-ctdivol-o695406",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-o695398",
+        "id": "o-o695406",
         "status": "final",
         "category": [
           {
@@ -848,14 +848,14 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695398"
+        "url": "Observation/o-695406"
       }
     },
     {
-      "fullUrl": "urn:uuid:obs-dlp-o695399",
+      "fullUrl": "urn:uuid:obs-dlp-o695407",
       "resource": {
         "resourceType": "Observation",
-        "id": "o-695399",
+        "id": "o-695407",
         "status": "final",
         "category": [
           {
@@ -890,7 +890,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Observation/o-695399"
+        "url": "Observation/o-695407"
       }
     }
   ]

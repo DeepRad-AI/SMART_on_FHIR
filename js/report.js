@@ -178,38 +178,38 @@ const NODULE_DETAIL_GROUPS = [
   //   ],
   // },
   {
-    title: "橫切面 (Axial)",
+    title: "Axial Plane",
     fields: [
-      { key: "axialMaxRadius", label: "平均直徑", patterns: ["axial max radius"] },
+      { key: "axialMaxRadius", label: "Diameter", patterns: ["axial max radius"] },
       // { key: "axialMaxDiameter", label: "最長徑", patterns: ["axial max diameter"] },
       // { key: "axialPerpDiameter", label: "垂直徑", patterns: ["axial perp diameter"] },
       // { key: "axialRadius", label: "半徑", patterns: ["axial radius"] },
-      { key: "axialSlice", label: "所在張數", patterns: ["axial slice"] },
+      { key: "axialSlice", label: "Slice", patterns: ["axial slice"] },
     ],
   },
   {
-    title: "冠狀切面 (Coronal)",
+    title: "Coronal Plane",
     fields: [
-      { key: "coronalMaxRadius", label: "平均直徑", patterns: ["coronal max radius"] },
+      { key: "coronalMaxRadius", label: "Diameter", patterns: ["coronal max radius"] },
       // { key: "coronalMaxDiameter", label: "最長徑", patterns: ["coronal max diameter"] },
       // { key: "coronalPerpDiameter", label: "垂直徑", patterns: ["coronal perp diameter"] },
       // { key: "coronalRadius", label: "半徑", patterns: ["coronal radius"] },
-      { key: "coronalSlice", label: "所在張數", patterns: ["coronal slice"] },
+      { key: "coronalSlice", label: "Slice", patterns: ["coronal slice"] },
     ],
   },
   {
-    title: "其他資訊",
+    title: "Impression",
     fields: [
-      { key: "solidPartDetail", label: "實質部分", patterns: ["solid part detail", "solid part"] },
-      { key: "texture", label: "類型", patterns: ["texture"] },
-      { key: "volume", label: "體積", patterns: ["volume"] },
-      { key: "location", label: "肺葉", patterns: ["location"] },
+      { key: "texture", label: "Type", patterns: ["texture"] },
+      { key: "solidPartDetail", label: "Solid Part", patterns: ["solid part detail", "solid part"] },
+      { key: "volume", label: "Volume", patterns: ["volume"] },
+      { key: "location", label: "Lobe", patterns: ["location"] },
       // { key: "malignancy", label: "malignancy", patterns: ["malignancy"] },
-      { key: "margin", label: "組織邊緣", patterns: ["margin"] },
-      { key: "followUpInfo", label: "追蹤訊息", patterns: ["follow up info"] },
-      { key: "volumeChange", label: "體積變化", patterns: ["volume change"] },
-      { key: "volumeDoublingTime", label: "體積倍增時間", patterns: ["volume doubling time"] },
-      { key: "description", label: "追蹤描述", patterns: ["description"] },
+      { key: "margin", label: "Margin", patterns: ["margin"] },
+      { key: "followUpInfo", label: "Previous Study", patterns: ["follow up info"] },
+      // { key: "volumeChange", label: "Volume Change", patterns: ["volume change"] },
+      { key: "volumeDoublingTime", label: "VDT", patterns: ["volume doubling time"] },
+      { key: "description", label: "Follow Up", patterns: ["description"] },
       { key: "lungRads", label: "Lung-RADS", patterns: ["lungrads"] },
       // { key: "cacScore", label: "心臟鈣化分數", patterns: ["cac score"] },
     ],
@@ -360,6 +360,9 @@ const renderReportData = ({ patient, report, observations }) => {
   const summary = parseSummaryObservation(observations);
   // Left card
   ui.lungRads.textContent = summary.lungRads || "Unknown";
+  if (ui.lungRads.textContent  === '4A'){
+    ui.lungRads.style.color = 'red';
+  }
 
   const count = parseInt(summary.noduleCount, 10) || 0;
   ui.noduleCount.textContent = count > 0

@@ -84,11 +84,12 @@ const renderReportCard = (client, report) => {
 
   const date = document.createElement("div");
   date.className = "report-date";
-  date.textContent = formatDate(report.effectiveDateTime || report.issued);
+  date.textContent = "Study"; // formatDate(report.effectiveDateTime || report.issued);
 
   const rads = document.createElement("div");
   rads.className = "report-rads";
   rads.textContent = "Loading...";
+  rads.textContent = formatDate(report.effectiveDateTime || report.issued);
 
   const meta = document.createElement("div");
   meta.className = "report-meta";
@@ -107,13 +108,13 @@ const renderReportCard = (client, report) => {
     return;
   }
 
-  Promise.all(refs.map((ref) => client.request(ref)))
-    .then((observations) => {
-      rads.textContent = findLungRadsCategory(observations);
-    })
-    .catch(() => {
-      rads.textContent = "Unknown";
-    });
+  // Promise.all(refs.map((ref) => client.request(ref)))
+  //   .then((observations) => {
+  //     rads.textContent = findLungRadsCategory(observations);
+  //   })
+  //   .catch(() => {
+  //     rads.textContent = "Unknown";
+  //   });
 };
 
 const startApp = ({ client, patientId }) => {
